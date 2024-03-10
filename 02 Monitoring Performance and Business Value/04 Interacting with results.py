@@ -2,7 +2,7 @@
 display(estimated_results.filter(metrics=['roc_auc']).to_df())
 
 # Filter estimated results for the reference period and convert them to a dataframe
-display(estimated_results.filter(period='analysis').to_df())
+display(estimated_results.filter(period='reference').to_df())
 
 # Filter the estimated results for the accuracy metric
 display(estimated_results.filter(metrics=['accuracy']).plot().show())
